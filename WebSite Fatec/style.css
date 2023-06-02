@@ -1,0 +1,231 @@
+*
+{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*=====================================================*/
+
+header
+{
+    height: auto;
+    width: 100%;
+}
+
+.container-header-titulo
+{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: auto;    
+    width: auto;
+    border-bottom: 0.5159958720330238vh solid rgb(178, 34, 34);
+}
+
+.titulo-header h1
+{
+    font-size: 4.105090311986864vh;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 2.063983488132095vh;
+}
+
+.titulo-header small
+{
+    color: white;
+    padding-bottom: 2.063983488132095vh;
+}
+
+.container-menu-header 
+{
+    height: 3.0959752321981426vh;
+    width: 100%;
+    background-color: darkgrey;
+    padding-top: 1.0319917440660475vh;
+    padding-bottom: 1.0319917440660475vh;
+}
+
+.container-menu-header ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu-header a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.0319917440660475vw;
+    margin-right: 1.0319917440660475vw;
+    font-size: 2.063983488132095vh;
+    font-weight: bold;
+}
+.container-menu-header a:hover
+{
+    text-decoration: none;
+    color: rgb(178, 34, 34);
+    font-weight: bold;
+    font-size: 2.063983488132095vh;
+}
+
+/*=====================================================*/
+
+.nav-menu
+{
+    width: 100%;
+    height: 0.5159958720330238vh;
+    background-color: rgb(178, 34, 34);
+}
+
+/*=====================================================*/
+.conteudo
+{
+    width: auto;
+    height: 41.050903119868636vh;
+}
+
+.conteudo-sobre
+{
+    width: 100%;
+    height: 41.050903119868636vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-sobre h1
+{
+    margin-top: 0px;
+    color: rgb(178, 34, 34);
+    font-size: 4.105090311986864vh;
+    text-transform: uppercase;
+}
+
+.conteudo-sobre p
+{
+    margin-top: 1.6420361247947455vh;
+    margin-bottom: 1.6420361247947455vh;
+    text-align: center;
+    color: black;
+}
+
+/*=====================================================*/
+
+form {
+    max-width: 106.52463382157124vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(178, 34, 34);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] 
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button[type="submit"] 
+{
+    background-color: rgb(178, 34, 34);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button[type="submit"]:hover 
+{
+    background-color: white;
+    color: rgb(178, 34, 34);
+    border: 0.1vb rgb(178, 34, 34) solid;
+}
+
+/*=====================================================*/
+
+footer
+{
+
+    width: 100%;
+    height: 65.68144499178982vh;
+    margin-top: 10px;
+}
+
+.rodape-contato
+{
+    width: 100%;
+    height: 49.26108374384236vh;
+    background-color: rgb(178, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5159958720330238vh solid darkgrey;
+}
+
+.rodape-desenvolvedores
+{
+    width: 100%;
+    height: 16.420361247947454vh;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-contato h1
+{
+    font-size: 8.210180623973727vh;
+    font-weight: bold;
+    margin-top: 0.8210180623973727vh;
+    margin-bottom: 0.8210180623973727vh;
+    color: white;
+}
+.rodape-contato p
+{
+    margin-top: 0.49261083743842365vh;
+    margin-bottom: 0.49261083743842365vh;
+    color: white;
+}
+
+.rodape-desenvolvedores p
+{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/*=====================================================*/
