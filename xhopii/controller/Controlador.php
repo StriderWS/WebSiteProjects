@@ -1,6 +1,9 @@
 <?php
 
+require_once "../model/BancoDeDados.php";
+
 class Controlador{
+
 
     //Atributo
     private $bancoDeDados;
@@ -10,6 +13,8 @@ class Controlador{
     }
 
 
+
+    //=================================================================================================================================================
 
     //Produtos
     public function cadastrarProduto($nome, $fabricante, $descricao, $valor){
@@ -34,6 +39,10 @@ class Controlador{
 
 
 
+    //=================================================================================================================================================
+
+
+
     //Funcionarios
     public function cadastrarFuncionario($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $salario)
     {
@@ -50,7 +59,7 @@ class Controlador{
                    "<h2>" . $funcionario["nome"] . "</h2>" .
                    "<p>sobrenome: " . $funcionario["sobrenome"] . "</p>" .
                    "<p>CPF: " . $funcionario["cpf"] . "</p>" . 
-                   "<p>dataNasc: " . $funcionario["dataNasc"] . "</p>" .
+                   "<p>dataNasc: " . $funcionario["dataNascimento"] . "</p>" .
                    "<p>telefone: " . $funcionario["telefone"] . "</p>" .
                    "<p>email: " . $funcionario["email"] . "</p>" .
                    "<p>salario: " . $funcionario["salario"] . "</p>" .
@@ -59,11 +68,16 @@ class Controlador{
     }
 
 
+
+    //=================================================================================================================================================
+    
+
+
     //Clientes
     public function cadastrarCliente($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $senha)
     {
         $cliente = new Cliente($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $senha);
-        $this->bancoDeDados->inserirFuncionario($cliente);
+        $this->bancoDeDados->inserirCliente($cliente);
     }
 
     public function visualizarClientes()
@@ -76,7 +90,7 @@ class Controlador{
                    "<h2>" . $cliente["nome"] . "</h2>" .
                    "<p>sobrenome: " . $cliente["sobrenome"] . "</p>" .
                    "<p>CPF: " . $cliente["cpf"] . "</p>" . 
-                   "<p>dataNasc: " . $cliente["dataNasc"] . "</p>" .
+                   "<p>dataNasc: " . $cliente["dataNascimento"] . "</p>" .
                    "<p>telefone: " . $cliente["telefone"] . "</p>" .
                    "<p>email: " . $cliente["email"] . "</p>" .
                    "<p>senha: " . $cliente["senha"] . "</p>" .

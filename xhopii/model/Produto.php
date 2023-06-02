@@ -8,8 +8,14 @@ class Produto{
     protected $descricao;
     protected $valor;
 
+
+
+    //=================================================================================================================================================
+
+
+
     //Construtor
-    public function __construct($Nome,$Fabricante,$Descricao,$Valor)
+    public function __construct($Nome, $Fabricante, $Descricao, $Valor)
     {
         $this->nome = $Nome;
         $this->fabricante = $Fabricante;
@@ -17,46 +23,64 @@ class Produto{
         $this->valor = $Valor;
     }
 
+
+
+    //=================================================================================================================================================
+
+
+
     //Getter e Setter
-    public function get_Nome()
+    public function getNome()
     {
         return($this->nome);
     }
 
-    public function set_Nome($Nome)
+    public function setNome($Nome)
     {
         $this->nome = $Nome;
     }
 
-    public function get_Fabricante()
+    //===============================================
+
+    public function getFabricante()
     {
         return($this->fabricante);
     }
 
-    public function set_Fabricante($Fabricante)
+    public function setFabricante($Fabricante)
     {
         $this->fabricante = $Fabricante;
     }
 
-    public function get_Descricao()
+    //===============================================
+
+    public function getDescricao()
     {
         return($this->descricao);
     }
 
-    public function set_Descricao($Descricao)
+    public function setDescricao($Descricao)
     {
         $this->descricao = $Descricao;
     }
 
-    public function get_Valor()
+    //===============================================
+
+    public function getValor()
     {
         return($this->valor);
     }
 
-    public function set_Valor($Valor)
+    public function setValor($Valor)
     {
         $this->valor = $Valor;
     }
+
+
+
+    //=================================================================================================================================================
+
+
 
     //Métodos
     public function aplicarCupom($cupomTaxa)
@@ -64,5 +88,6 @@ class Produto{
         $valorDesconto = ($this->valor*$cupomTaxa) / 100;
         $this->valor = $this->valor - $valorDesconto;
     }
+    
 }
 ?>

@@ -1,5 +1,6 @@
 <?php
-    require "../processamento/funcoesBD.php";
+
+    require_once "../controller/Controlador.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,11 +38,14 @@
 
     <section class="conteudo-visualizar">
         <section class="conteudo-visualizar-box">
+
             <h1>Clientes</h1>
+
             <?php
                 $controlador = new Controlador();
                 echo $controlador->visualizarClientes();
             ?>
+
         </section>
     </section>
 

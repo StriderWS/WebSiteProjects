@@ -33,8 +33,11 @@
 
     <section class="conteudo-cadastro">
         <section class="conteudo-formulario-cadastro">
+
             <form method="POST" action="../processamento/processamento.php">
+
                 <label>Cadastrar Cliente</label>
+
                 <input type="text" placeholder="Nome" name="inputNome">
                 <input type="text" placeholder="Sobrenome" name="inputSobrenome">
                 <input type="text" placeholder="CPF" name="inputCPF">
@@ -42,8 +45,11 @@
                 <input type="text" placeholder="Telefone" name="inputTelefone">
                 <input type="text" placeholder="Email" name="inputEmail">
                 <input type="password" placeholder="Senha" name="inputSenha">
+
                 <input id="botao" type="submit" value="Cadastrar">
+
             </form>
+            
         </section>
     </section>
 

@@ -11,86 +11,110 @@ class Funcionario{
     protected $email;
     protected $salario;
 
+
+
+    //=================================================================================================================================================
+
+
+
     //Construtor
     public function __construct($Cpf, $Nome, $Sobrenome, $DataNasc, $Telefone, $Email, $Salario)
     {
         $this->cpf = $Cpf;
         $this->nome = $Nome;
         $this->sobrenome = $Sobrenome;
-        $this->sobrenome = $DataNasc;
+        $this->dataNasc = $DataNasc;
         $this->telefone = $Telefone;
         $this->email = $Email;
         $this->salario = $Salario;
 
     }
 
+
+
+    //=================================================================================================================================================
+
+
+
     //Getter e Setter
-    public function get_Nome()
+    public function getCpf()
+    {
+        return($this->cpf);
+    }
+
+    public function setCpf($Cpf)
+    {
+        $this->cpf = $Cpf;
+    }
+
+    //===============================================
+
+    public function getNome()
     {
         return($this->nome);
     }
 
-    public function set_Nome($Nome)
+    public function setNome($Nome)
     {
         $this->nome = $Nome;
     }
 
+    //===============================================
 
-
-    public function get_Sobrenome()
+    public function getSobrenome()
     {
         return($this->sobrenome);
     }
 
-    public function set_Sobrenome($Sobrenome)
+    public function setSobrenome($Sobrenome)
     {
         $this->sobrenome = $Sobrenome;
     }
 
+    //===============================================
 
-
-    public function get_DataNasc()
+    public function getDataNasc()
     {
         return($this->dataNasc);
     }
 
-    public function set_DataNasc($DataNasc)
+    public function setDataNasc($DataNasc)
     {
         $this->dataNasc = $DataNasc;
     }
 
+    //===============================================
 
-
-    public function get_Telefone()
+    public function getTelefone()
     {
         return($this->telefone);
     }
 
-    public function set_Telefone($Telefone)
+    public function setTelefone($Telefone)
     {
         $this->telefone = $Telefone;
     }
 
+    //===============================================
 
-
-    public function get_Email()
+    public function getEmail()
     {
         return($this->email);
     }
 
-    public function set_Email($Email)
+    public function setEmail($Email)
     {
         $this->email = $Email;
     }
 
+    //===============================================
 
-
-    public function get_Salario()
+    public function getSalario()
     {
         return($this->salario);
     }
 
-    public function set_Salario($Salario)
+    public function setSalario($Salario)
     {
         $this->salario = $Salario;
     }

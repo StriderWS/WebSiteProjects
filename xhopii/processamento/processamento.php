@@ -1,8 +1,20 @@
 <?php
 
 session_start();
-require "funcoesBD.php";
+
 require_once("../model/Produto.php");
+require_once '../controller/Controlador.php';
+
+require_once "../model/BancoDeDados.php";
+require_once("../model/Produto.php");
+require_once("../model/Funcionario.php");
+require_once("../model/Cliente.php");
+
+
+
+//=================================================================================================================================================
+
+
 
 $controlador = new Controlador();
 
@@ -17,6 +29,12 @@ if(isset($_POST['inputEmailLog']) && isset($_POST['inputSenhaLog'])){
     header('Location:../view/home.php');
     die();
 }
+
+
+
+//=================================================================================================================================================
+
+
 
 //Cadastro de Cliente
 if(isset($_POST['inputNome']) && isset($_POST['inputSobrenome']) && 
@@ -38,6 +56,12 @@ if(isset($_POST['inputNome']) && isset($_POST['inputSobrenome']) &&
     die();
 }
 
+
+
+//=================================================================================================================================================
+
+
+
 //Cadastro de Funcionário
 if(isset($_POST['inputNomeFunc']) && isset($_POST['inputSobrenomeFunc']) && 
    isset($_POST['inputCPFFunc']) && isset($_POST['inputDataNascFunc']) && 
@@ -57,6 +81,12 @@ if(isset($_POST['inputNomeFunc']) && isset($_POST['inputSobrenomeFunc']) &&
     header('Location:../view/cadastroFuncionario.php');
     die();
 }
+
+
+
+//=================================================================================================================================================
+
+
 
 //Cadastro de Produto
 if(!empty($_POST['inputNomeProd']) && !empty($_POST['inputFabricanteProd']) && 
