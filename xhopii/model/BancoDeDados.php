@@ -63,7 +63,7 @@ class BancoDeDados{
         
         $conexao = $this->conectarBD();
         $consulta = "INSERT INTO funcionario (cpf, nome, sobrenome, dataNascimento, telefone, email, salario) 
-                     VALUES ('".$funcionario->getcpf()."','".$funcionario->getnome()."','".$funcionario->getsobrenome()."','".$funcionario->getdataNasc()."','".$funcionario->gettelefone()."','".$funcionario->getemail()."','".$funcionario->getsalario()."')";
+                     VALUES ('".$funcionario->getcpf()."','".$funcionario->getnome()."','".$funcionario->getsobreNome()."','".$funcionario->getdataNasc()."','".$funcionario->gettelefone()."','".$funcionario->getemail()."','".$funcionario->getsalario()."')";
         mysqli_query($conexao,$consulta);
     }
     

@@ -57,7 +57,7 @@ class Controlador{
         {
             return "<section class=\"conteudo-bloco\">" .
                    "<h2>" . $funcionario["nome"] . "</h2>" .
-                   "<p>sobrenome: " . $funcionario["sobrenome"] . "</p>" .
+                   "<p>sobrenome: " . $funcionario["sobrenzome"] . "</p>" .
                    "<p>CPF: " . $funcionario["cpf"] . "</p>" . 
                    "<p>dataNasc: " . $funcionario["dataNascimento"] . "</p>" .
                    "<p>telefone: " . $funcionario["telefone"] . "</p>" .
